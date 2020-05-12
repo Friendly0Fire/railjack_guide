@@ -1,0 +1,28 @@
+############################# Summary ###################################
+summary:
+  enable : true
+  title : The Guide
+  summary_item :
+  - icon : fas fa-info
+    title : Core Concepts
+    content : Go over the fundamentals, learn the terminology, and get started the right way.
+
+  - icon : fas fa-map-marker-alt
+    title : The Missions
+    content : Explore what the current missions are like, how they're divided up, what to do in each, and how to best get what you want.
+
+  - icon : fas fa-space-shuttle
+    title : The Gear
+    content : Learn what the Railjack is, what it's composed of, what each part does and how they interact together.
+
+  - icon : fas fa-user-tag
+    title : The Roles
+    content : See what each Tenno is expected to do in a well-oiled crew, learn the optimal strategies.
+
+  - icon : fas fa-pencil-ruler
+    title : The Builds
+    content : Get an overview of the current meta builds as well as insight into why they are at the top.
+
+  - icon : fas fa-radiation-alt
+    title : Sentient Anomaly
+    content : Learn about the not-so-mysterious anomaly traveling through the *Veil Proxima*.
