@@ -6,6 +6,7 @@ summary:
   - icon : fas fa-info
     title : Core Concepts
     content : Go over the fundamentals, learn the terminology, and get started the right way.
+    link: guide/concepts
 
   - icon : fas fa-map-marker-alt
     title : The Missions

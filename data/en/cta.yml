@@ -1,0 +1,10 @@
+############################# call to action ##############################
+cta:
+    enable : true
+    bg_image : "images/backgrounds/cta.png"
+    title : "Want more?"
+    content : "Join us on *Railjack Outpost*, the premier Discord server dedicated to all things Railjack!"
+    button:
+      enable : true
+      label : "Join us on Discord"
+      link : "https://discord.gg/6qKQwHR"

@@ -2,7 +2,7 @@ baseURL = "https://rj.radiantlabs.ca/"
 languageCode = "en-us"
 title = "Railjack Outpost Guide"
 theme = "meghna"
-author = "El Heladero"
+author = "El Heladero, FriendlyFire"
 summaryLength = "15"
 
 ############################# Plugins ##########################
@@ -38,7 +38,7 @@ link = "https://kit.fontawesome.com/33a0399cb5.js"
 [[menu.main]]
 name = "Guide"
 pre = "<i class='far fa-newspaper'></i>"
-URL = "guide"
+URL = "summary"
 weight = 1
 
 [[menu.static]]
@@ -81,7 +81,5 @@ link = "https://discord.gg/6qKQwHR"
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"
-contentDir = "content/english"
 weight = 1
-home = "Home"
 copyright = "[![Creative Commons Licence](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/) This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)."

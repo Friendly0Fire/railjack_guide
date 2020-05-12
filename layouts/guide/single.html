@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ partial "navigation.html" . }}
+
+<section class="section guide-item">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <h1>{{ .Title }}</h1>
+      </div>
+      <div class="col-lg-8 offset-lg-2">
+        <div class="post-single-content">
+          {{ .Content }}
+        </div>
+        {{ if .Site.Params.post_share }}
+        {{ partial "post-share.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
