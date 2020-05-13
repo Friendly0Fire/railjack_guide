@@ -5,3 +5,7 @@ draft: true
 ---
 
 Lorem ipsum.
+
+{{<imgdesc align="left" image="images/Tenno_Ship_2.jpg" title="Main">}}
+Testing.
+{{</imgdesc>}}
