@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="post-single-content">
-          {{ .Content }}
+          {{ .Content | markdownify }}
         </div>
         {{ if .Site.Params.post_share }}
         {{ partial "post-share.html" . }}

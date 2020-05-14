@@ -1,0 +1,4 @@
+<button type="button" id='{{ .Get "id" }}-btn' class="expander collapsed" data-toggle="collapse" data-target='#{{ .Get "id" }}'><i class="fas"></i></button>
+<div class="collapse" id='{{ .Get "id" }}'>
+    {{ .Inner }}
+</div>

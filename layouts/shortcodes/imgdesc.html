@@ -1,14 +1,15 @@
+{{ $colwidth := default "5" (.Get "imgwidth") }}
 <div class="img-desc container-fluid px-lg-5" data-aos="fade-up">
-    <div class="row mx-lg-n5">
-        {{ if eq (.Get "align") "left" }}
-        <div class="col-lg-5 img-wrapper"><img src='{{ .Get "image" | absURL }}' /></div>
-        {{ end }}
-        <div class="content col-lg-7 py-3 px-lg-5">
-            {{ with .Get "title"}}<h3>{{.}}</h3>{{ end }}
-            {{ .Inner | markdownify }}
-        </div>
-        {{ if eq (.Get "align") "right" }}
-        <div class="col-lg-5 img-wrapper"><img src='{{ .Get "image" | absURL }}' /></div>
-        {{ end }}
-    </div>
+<div class="row mx-lg-n5">
+{{ if eq (.Get "align") "left" }}
+<div class="col-lg-{{ $colwidth }} img-wrapper" {{with .Get "margin"}}style="padding: {{.}}"{{end}}><img src='{{ .Get "image" | absURL }}' /></div>
+{{ end }}
+<div class='content col-lg py-3 px-lg-4'>
+{{ with .Get "title"}}<h3>{{ . | markdownify }}</h3>{{ end }}
+{{ .Inner | markdownify }}
+</div>
+{{ if eq (.Get "align") "right" }}
+<div class="col-lg-{{ $colwidth }} img-wrapper"><img src='{{ .Get "image" | absURL }}' /></div>
+{{ end }}
+</div>
 </div>
