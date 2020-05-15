@@ -40,8 +40,14 @@ code = "AOS.init();"
 ############################# Navigation ##################################
 [[menu.main]]
 name = "Guide"
-pre = "<i class='far fa-newspaper'></i>"
-URL = "summary"
+pre = "<i class='fas fa-map-signs'></i>"
+URL = "guide"
+weight = 1
+
+[[menu.main]]
+name = "Reference"
+pre = "<i class='fas fa-book'></i>"
+URL = "reference"
 weight = 1
 
 [[menu.static]]
@@ -49,17 +55,10 @@ pre = "|"
 weight = 1
 
 [[menu.static]]
-name = "Discord"
+name = "Our Discord"
 pre = "<i class='fab fa-discord'></i>"
 URL = "https://discord.gg/6qKQwHR"
 weight = 2
-
-#### external / static link ####
-[[menu.static]]
-name = "Get Warframe"
-pre = "<i class='fas fa-external-link-alt'></i>"
-URL = "https://warframe.com/"
-weight = 8
 
 ############################# Default Parameters ##########################
 [params]
