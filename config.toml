@@ -4,6 +4,7 @@ title = "Railjack Outpost"
 theme = "meghna"
 author = "El Heladero, FriendlyFire"
 summaryLength = "15"
+assetDir = "static"
 
 ############################# Plugins ##########################
 # css plugins

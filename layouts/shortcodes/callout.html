@@ -1,0 +1,55 @@
+{{ $clip := apply (split (.Get "clip") " ") "int" "." }}
+{{ $img := resources.Get (.Parent.Get "image") }}
+
+{{ $calloutLeft := index $clip 0 }}
+{{ $calloutTop := index $clip 1 }}
+{{ $calloutWidth := index $clip 2 }}
+{{ $calloutHeight := index $clip 3 }}
+
+{{/* Horizontal Position */}}
+
+{{ $descLeft := add $calloutLeft $calloutWidth }}
+{{ $descMaxWidthLeft := sub $img.Width $descLeft }}
+{{ $descRight := sub $img.Width $calloutLeft }}
+{{ $descMaxWidthRight := sub $img.Width $descRight }}
+
+{{ if gt $descMaxWidthLeft $descMaxWidthRight }}
+    {{ .Scratch.Set "dmw" $descMaxWidthLeft }}
+    {{ .Scratch.Set "dhp" (delimit (slice "left: " $descLeft "px;") "" | safeCSS) }}
+{{ else }}
+    {{ .Scratch.Set "dmw" $descMaxWidthRight }}
+    {{ .Scratch.Set "dhp" (delimit (slice "right: " $descRight "px;") "" | safeCSS) }}
+{{ end }}
+{{ $descMaxWidth := .Scratch.Get "dmw" }}
+{{ $descHorizontalPosition := .Scratch.Get "dhp" }}
+
+{{/* Vertical Position */}}
+
+{{ $descTop := $calloutTop }}
+{{ $descMaxHeightTop := sub $img.Height $descTop }}
+{{ $descBottom := sub $img.Height (add $calloutTop $calloutHeight) }}
+{{ $descMaxHeightBottom := sub $img.Height $descBottom }}
+
+{{ if gt $descMaxHeightTop $descMaxHeightBottom }}
+    {{ .Scratch.Set "dmh" $descMaxHeightTop }}
+    {{ .Scratch.Set "dvp" (delimit (slice "top: " $descTop "px;") "" | safeCSS) }}
+    {{ .Scratch.Set "ec" "callout-border-top" }}
+{{ else }}
+    {{ .Scratch.Set "dmh" $descMaxHeightBottom }}
+    {{ .Scratch.Set "dvp" (delimit (slice "bottom: " $descBottom "px;") "" | safeCSS) }}
+    {{ .Scratch.Set "ec" "callout-border-bottom" }}
+{{ end }}
+{{ $descMaxHeight := .Scratch.Get "dmh" }}
+{{ $descVerticalPosition := .Scratch.Get "dvp" }}
+
+<a href="#">
+<div class="image-callout" style="width: {{ $calloutWidth }}px; height: {{ $calloutHeight }}px; left: {{ $calloutLeft }}px; top: {{ $calloutTop }}px;">
+<img style='margin: -{{ $calloutTop }}px 0 0 -{{ $calloutLeft }}px;' src='{{ with .Parent }}{{ $img | absURL }}{{ end }}'/>
+</div>
+</a>
+<div class='image-callout-desc image-callout-inactive {{ .Scratch.Get "ec" }}' style="{{ $descHorizontalPosition }} {{ $descVerticalPosition }} min-height: {{ $calloutHeight }}px; max-width: {{ $descMaxWidth }}px; max-height: {{ $descMaxHeight }}px">
+<div>
+<h5>{{ .Get "title" }}</h5>
+{{ .Inner | markdownify }}
+</div>
+</div>
