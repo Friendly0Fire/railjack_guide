@@ -4,11 +4,11 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "hugo",
-            "task": "server draft",
+            "type": "shell",
             "group": "build",
+            "command": "hugo server --buildDrafts --disableFastRender",
             "problemMatcher": [],
-            "label": "hugo: Serve draft site"
+            "label": "Serve draft site"
         },
         {
             "type": "hugo",
