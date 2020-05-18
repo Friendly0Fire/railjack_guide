@@ -34,4 +34,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor nulla sed fri
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor nulla sed fringilla condimentum. Maecenas tellus lacus, gravida a nulla eget, vestibulum auctor dui. Sed sodales venenatis tempus. Cras lorem ligula, auctor ac laoreet in, facilisis quis arcu. Maecenas sodales diam elit, sed venenatis orci sagittis placerat. Vivamus a diam vel ligula scelerisque varius sit amet id leo. Aenean aliquam dui vel ornare sollicitudin. Nunc quis dictum felis, sollicitudin dignissim metus.
 {{</callout>}}
+{{<callout clip="600 300 100 100" title="Testing 234">}}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor nulla sed fringilla condimentum. Maecenas tellus lacus, gravida a nulla eget, vestibulum auctor dui. Sed sodales venenatis tempus. Cras lorem ligula, auctor ac laoreet in, facilisis quis arcu. Maecenas sodales diam elit, sed venenatis orci sagittis placerat. Vivamus a diam vel ligula scelerisque varius sit amet id leo. Aenean aliquam dui vel ornare sollicitudin. Nunc quis dictum felis, sollicitudin dignissim metus.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor nulla sed fringilla condimentum. Maecenas tellus lacus, gravida a nulla eget, vestibulum auctor dui. Sed sodales venenatis tempus. Cras lorem ligula, auctor ac laoreet in, facilisis quis arcu. Maecenas sodales diam elit, sed venenatis orci sagittis placerat. Vivamus a diam vel ligula scelerisque varius sit amet id leo. Aenean aliquam dui vel ornare sollicitudin. Nunc quis dictum felis, sollicitudin dignissim metus.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor nulla sed fringilla condimentum. Maecenas tellus lacus, gravida a nulla eget, vestibulum auctor dui. Sed sodales venenatis tempus. Cras lorem ligula, auctor ac laoreet in, facilisis quis arcu. Maecenas sodales diam elit, sed venenatis orci sagittis placerat. Vivamus a diam vel ligula scelerisque varius sit amet id leo. Aenean aliquam dui vel ornare sollicitudin. Nunc quis dictum felis, sollicitudin dignissim metus.
+{{</callout>}}
 {{</calloutable>}}
