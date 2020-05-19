@@ -10,7 +10,7 @@
 
 {{ $descLeft := add $calloutLeft $calloutWidth }}
 {{ $descMaxWidthLeft := sub $img.Width $descLeft }}
-{{ $descRight := sub $img.Width $calloutLeft }}
+{{ $descRight := add 5 (sub $img.Width $calloutLeft) }}
 {{ $descMaxWidthRight := sub $img.Width $descRight }}
 
 {{ if gt $descMaxWidthLeft $descMaxWidthRight }}
@@ -29,7 +29,7 @@
 
 {{ $descTop := $calloutTop }}
 {{ $descMaxHeightTop := sub $img.Height $descTop }}
-{{ $descBottom := sub $img.Height (add $calloutTop $calloutHeight) }}
+{{ $descBottom := add 1 (sub $img.Height (add $calloutTop $calloutHeight)) }}
 {{ $descMaxHeightBottom := sub $img.Height $descBottom }}
 
 {{ if gt $descMaxHeightTop $descMaxHeightBottom }}
