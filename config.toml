@@ -5,6 +5,7 @@ theme = "meghna"
 author = "El Heladero, FriendlyFire"
 summaryLength = "15"
 assetDir = "static"
+disablePathToLower = true
 
 ############################# Plugins ##########################
 # css plugins

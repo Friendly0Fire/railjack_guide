@@ -25,3 +25,14 @@ The first way is to look for them in regular missions:
 
 The second, and much faster way, is to join Railjack crews. These resources are plentiful drops in any Empyrean mission.
 {{</imgdesc>}}
+
+{{<section>}}Early Goals{{</section>}}
+
+* Basic function of things
+* Good missions to farm
+* Hazards
+* Early Intrinsics to go for
+* Dirac and how it works
+* Core avionics
+* Forge, Tunguska Cannon
+* Refinement and restocking on dock (end of flight loop)

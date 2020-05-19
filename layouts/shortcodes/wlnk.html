@@ -1,1 +1,1 @@
-<a href="https://warframe.fandom.com/wiki/{{ .Inner }}">{{ .Inner }}</a>
+<a href='https://warframe.fandom.com/wiki/{{ replace .Inner " " "_" | urlize }}' target="_blank">{{ .Inner }}</a>
