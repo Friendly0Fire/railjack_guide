@@ -62,5 +62,11 @@
 		"prefix": "callout",
 		"scope": "markdown",
 		"body": ["{{<callout clip=\"$1\" title=\"$2\">}}", "$0", "{{</callout>}}"]
+	},
+
+	"Video": {
+		"prefix": "video",
+		"scope": "markdown",
+		"body": ["{{<video static=\"images/$1\" webm=\"videos/$2\">}}"]
 	}
 }
