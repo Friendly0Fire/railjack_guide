@@ -1,4 +1,4 @@
 
-<video autoplay loop poster='{{ .Get "static" | absURL }}'>
+<video autoplay muted loop poster='{{ .Get "static" | absURL }}'>
 {{ with .Get "webm" }}<source src='{{ . | absURL }}' type="video/webm">{{ end }}
 </video>

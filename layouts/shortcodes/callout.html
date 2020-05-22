@@ -52,19 +52,39 @@
 {{ $bgPosLeft := mul 100 (div $calloutLeft (float (sub $img.Width $calloutWidth))) }}
 {{ $bgPosTop := mul 100 (div $calloutTop (float (sub $img.Height $calloutHeight))) }}
 
+{{ $titleAlignCv := dict "left" "start" "center" "center" "right" "end" "top" "start" "bottom" "end"}}
+
+{{ $titleAlign := index $titleAlignCv (default "left" (.Get "titlealign"))}}
+{{ $titleVAlign := index $titleAlignCv (default "left" (.Get "titlevalign"))}}
+
+{{ $uniqueID := md5 (delimit (slice .Inner (.Get "title") (.Get "clip") (.Parent.Get "image")) " ") }}
+
+{{ $css := printf `
+    #callout-%[1]s {
+        width: %[2]f%%;
+        height: %[3]f%%;
+        left: %[4]f%%;
+        top: %[5]f%%;
+        background: url(%[6]s) no-repeat;
+        background-size: %[7]f%% auto;
+        background-position: left %[8]f%% top %[9]f%%;
+    }
+
+    #callout-%[1]s > span {
+        place-self: %[10]s %[11]s;
+        text-align: %[12]s;
+    }
+` $uniqueID (div $calloutWidth $imgWidth100) (div $calloutHeight $imgHeight100) (div $calloutLeft $imgWidth100) (div $calloutTop $imgHeight100) $img.Permalink $inverseWidthScale $bgPosLeft $bgPosTop $titleVAlign $titleAlign (default "left" (.Get "titlealign")) }}
+
+{{ .Page.Scratch.Add "inline-css" (slice $css) }}
+
 <div class='image-callout {{ .Scratch.Get "ec2" }}'>
-<a href="#" class='image-callout-btn' style='
-    width: {{ div $calloutWidth $imgWidth100 }}%;
-    height: {{ div $calloutHeight $imgHeight100 }}%;
-    left: {{ div $calloutLeft $imgWidth100 }}%;
-    top: {{ div $calloutTop $imgHeight100 }}%;
-    background: url({{ $img.Permalink }}) no-repeat;
-    background-size: {{ $inverseWidthScale }}% auto;
-    background-position: left {{ $bgPosLeft }}% top {{ $bgPosTop }}%;'>
+<a href="#" class='image-callout-btn' id='callout-{{ $uniqueID }}'>
+<span>{{ .Get "title" | markdownify }}</span>
 </a>
 <div class='image-callout-desc image-callout-inactive {{ .Scratch.Get "ec" }}' style="{{ $descHorizontalPosition }} {{ $descVerticalPosition }} min-height: {{ div $calloutWidth $imgWidth100 }}%; max-width: {{ $descMaxWidth }}%; max-height: {{ $descMaxHeight }}%">
 <div>
-<h5>{{ .Get "title" }}</h5>
+<h5>{{ .Get "title" | markdownify }}</h5>
 {{ .Inner | markdownify }}
 </div>
 </div>
