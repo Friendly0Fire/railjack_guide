@@ -1,9 +1,7 @@
 ############################### Banner ################################
 banner:
     enable : true
-    bg_image_webp : "images/backgrounds/hero.webp"
-    bg_image : "images/backgrounds/hero.png"
-    bg_video: "images/backgrounds/hero.webm"
+    bg_video: "videos/Hero.webm"
     title : "The Veil beckons, Tenno"
     content : "Are you ready to answer the call?"
     button:

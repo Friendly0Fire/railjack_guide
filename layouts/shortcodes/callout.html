@@ -9,20 +9,23 @@
 {{/* Horizontal Position */}}
 
 {{ $descLeft := add $calloutLeft $calloutWidth }}
-{{ $descMaxWidthLeft := sub $img.Width $descLeft }}
+{{ $descMaxWidthLeft := mul 0.75 (sub $img.Width $descLeft) }}
 {{ $descRight := add 5 (sub $img.Width $calloutLeft) }}
-{{ $descMaxWidthRight := sub $img.Width $descRight }}
+{{ $descMaxWidthRight := mul 0.75 (sub $img.Width $descRight) }}
+
+{{ $imgWidth100 := div (float $img.Width) 100 }}
+{{ $imgHeight100 := div (float $img.Height) 100 }}
 
 {{ if gt $descMaxWidthLeft $descMaxWidthRight }}
     {{ .Scratch.Set "dmw" $descMaxWidthLeft }}
-    {{ .Scratch.Set "dhp" (delimit (slice "left: " $descLeft "px;") "" | safeCSS) }}
+    {{ .Scratch.Set "dhp" (delimit (slice "left: " (div $descLeft $imgWidth100) "%;") "" | safeCSS) }}
     {{ .Scratch.Set "ec2" "image-callout-shift-left" }}
 {{ else }}
     {{ .Scratch.Set "dmw" $descMaxWidthRight }}
-    {{ .Scratch.Set "dhp" (delimit (slice "right: " $descRight "px;") "" | safeCSS) }}
+    {{ .Scratch.Set "dhp" (delimit (slice "right: " (div $descRight $imgWidth100) "%;") "" | safeCSS) }}
     {{ .Scratch.Set "ec2" "image-callout-shift-right" }}
 {{ end }}
-{{ $descMaxWidth := .Scratch.Get "dmw" }}
+{{ $descMaxWidth := div (.Scratch.Get "dmw") $imgWidth100 }}
 {{ $descHorizontalPosition := .Scratch.Get "dhp" }}
 
 {{/* Vertical Position */}}
@@ -34,21 +37,32 @@
 
 {{ if gt $descMaxHeightTop $descMaxHeightBottom }}
     {{ .Scratch.Set "dmh" $descMaxHeightTop }}
-    {{ .Scratch.Set "dvp" (delimit (slice "top: " $descTop "px;") "" | safeCSS) }}
+    {{ .Scratch.Set "dvp" (delimit (slice "top: " (div $descTop $imgHeight100) "%;") "" | safeCSS) }}
     {{ .Scratch.Set "ec" "image-callout-border-top" }}
 {{ else }}
     {{ .Scratch.Set "dmh" $descMaxHeightBottom }}
-    {{ .Scratch.Set "dvp" (delimit (slice "bottom: " $descBottom "px;") "" | safeCSS) }}
+    {{ .Scratch.Set "dvp" (delimit (slice "bottom: " (div $descBottom $imgHeight100) "%;") "" | safeCSS) }}
     {{ .Scratch.Set "ec" "image-callout-border-bottom" }}
 {{ end }}
-{{ $descMaxHeight := .Scratch.Get "dmh" }}
+{{ $descMaxHeight := div (.Scratch.Get "dmh") $imgHeight100 }}
 {{ $descVerticalPosition := .Scratch.Get "dvp" }}
 
+{{ $inverseWidthScale := mul (div (float $img.Width) $calloutWidth) 100 }}
+
+{{ $bgPosLeft := mul 100 (div $calloutLeft (float (sub $img.Width $calloutWidth))) }}
+{{ $bgPosTop := mul 100 (div $calloutTop (float (sub $img.Height $calloutHeight))) }}
+
 <div class='image-callout {{ .Scratch.Get "ec2" }}'>
-<a href="#" class='image-callout-btn' style="width: {{ $calloutWidth }}px; height: {{ $calloutHeight }}px; left: {{ $calloutLeft }}px; top: {{ $calloutTop }}px;">
-<img style='margin: -{{ $calloutTop }}px 0 0 -{{ $calloutLeft }}px;' src='{{ with .Parent }}{{ $img | absURL }}{{ end }}'/>
+<a href="#" class='image-callout-btn' style='
+    width: {{ div $calloutWidth $imgWidth100 }}%;
+    height: {{ div $calloutHeight $imgHeight100 }}%;
+    left: {{ div $calloutLeft $imgWidth100 }}%;
+    top: {{ div $calloutTop $imgHeight100 }}%;
+    background: url({{ $img.Permalink }}) no-repeat;
+    background-size: {{ $inverseWidthScale }}% auto;
+    background-position: left {{ $bgPosLeft }}% top {{ $bgPosTop }}%;'>
 </a>
-<div class='image-callout-desc image-callout-inactive {{ .Scratch.Get "ec" }}' style="{{ $descHorizontalPosition }} {{ $descVerticalPosition }} min-height: {{ $calloutHeight }}px; max-width: {{ $descMaxWidth }}px; max-height: {{ $descMaxHeight }}px">
+<div class='image-callout-desc image-callout-inactive {{ .Scratch.Get "ec" }}' style="{{ $descHorizontalPosition }} {{ $descVerticalPosition }} min-height: {{ div $calloutWidth $imgWidth100 }}%; max-width: {{ $descMaxWidth }}%; max-height: {{ $descMaxHeight }}%">
 <div>
 <h5>{{ .Get "title" }}</h5>
 {{ .Inner | markdownify }}
