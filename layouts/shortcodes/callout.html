@@ -76,7 +76,7 @@
     }
 ` $uniqueID (div $calloutWidth $imgWidth100) (div $calloutHeight $imgHeight100) (div $calloutLeft $imgWidth100) (div $calloutTop $imgHeight100) $img.Permalink $inverseWidthScale $bgPosLeft $bgPosTop $titleVAlign $titleAlign (default "left" (.Get "titlealign")) }}
 
-{{ .Page.Scratch.Add "inline-css" (slice $css) }}
+{{ .Page.Scratch.Add "inline-css" $css }}
 
 <div class='image-callout {{ .Scratch.Get "ec2" }}'>
 <a href="#" class='image-callout-btn' id='callout-{{ $uniqueID }}'>

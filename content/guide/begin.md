@@ -158,6 +158,8 @@ While Hull Breaches work similarly to Hull Ruptures, they must be repaired withi
 
 *Intrinsics* are a brand new mechanic introduced with Empyrean. They are *intrinsically* tied to your Operator/account rather than any piece of gear or Warframe. The game currently has *four* Intrinsic categories, with 10 Ranks each: *Tactical*, *Piloting*, *Gunnery* and *Engineering*. For more details on Intrinsics, see the [Intrinsics reference](/reference/intrinsics) page.
 
+![Intrinsics Screen](/images/begin/intrinsics.png)
+
 {{<imgdesc align="left" image="images/IntrinsicPoint.png" title="Intrinsic Points" imgwidth="3">}}
 
 Intrinsics gate your progression aboard your Railjack. They are collected merely by accumulating Affinity normally at a rate of **20,000 Affinity per Intrinsic Point**. Regular actions such as killing enemies give normal Affinity, but Railjack-specific actions such as destroying fighters or repairing Hazards also provide a hefty amount of Affinity and are therefore a good source of Intrinsic Points. Affinity sharing is also functional, covers all sources of affinity gain (including the aforementioned Hazards and fighter kills) and has no maximum range.
@@ -261,6 +263,19 @@ This route is more or less dedicated to engineering and the Forge, with many fro
 {{</table>}}
 
 {{<section>}}Avionics{{</section>}}
+
+Unlike Intrinsics, *Avionics*, despite the fancy name, are a very familiar concept: they are essentially {{<wlnk>}}Mods{{</wlnk>}} for the Railjack.
+
+{{<calloutable image="images/begin/avionics.png">}}
+{{<callout clip="100 980 750 350" title="Battle Avionics">}}
+{{</callout>}}
+{{<callout clip="1700 100 775 900" title="Integrated Avionics">}}
+{{</callout>}}
+{{<callout clip="1700 1000 775 325" title="Tactical Avionics">}}
+{{</callout>}}
+{{<callout clip="1050 50 450 300" title="Avionics Capacity">}}
+{{</callout>}}
+{{</calloutable>}}
 
 * Dirac and how it works
 * Core avionics

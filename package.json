@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^9.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Friendly0Fire/railjack_guide.git"
+  },
+  "browserslist": [ "defaults" ]
+}
