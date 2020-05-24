@@ -199,6 +199,12 @@ Here are sample optimal paths. These are not to be taken as rigid gospel, merely
     margin: auto;
     border-collapse: separate;
     border-spacing: 2px;
+
+    tr td:first-child, th:first-child {
+        font-weight: bold;
+        font-family: "Comfortaa";
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 }
 .route-table th, .route-table td {
     text-align: center;
