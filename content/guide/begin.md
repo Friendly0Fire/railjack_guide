@@ -134,7 +134,7 @@ Note that only *one* Hazard of each type may be active at once. In addition, rep
 - **Hull Ruptures** repair by **20%**
 - **Hull Breaches** repair by **30%** and grant temporary invulnerability to the Railjack
 
-Finally, Hazards consume a resource known as *Revolite*, which will be covered later. Regular Hazards consume **25 Revolite**, while Hull Breaches consume **100 Revolite**. If Revolite stocks are insufficient, the Hazard *cannot be fixed.*
+Finally, Hazards use a consumable known as *Revolite*, which will be covered later. Regular Hazards consume **25 Revolite**, while Hull Breaches consume **100 Revolite**. If Revolite stocks are insufficient, the Hazard *cannot be fixed.*
 
 
 ### Repairing a hazard
@@ -183,7 +183,7 @@ Gunnery has mostly situationally useful Intrinsics, with one exception. Ranks 1 
 
 ##### Engineering
 
-Engineering is a core skill of any good Railjack crew, but may not be the most exciting role to most. If you find that the idea of being in the cargo hold crafting ammunition and ensuring that all levels remain high enough to keep the ship going, then this is your category. Unfortunately, this is also the most expensive category to level if you want to be useful, with the absolute minimum being Rank 5 (Dome Charge Forge) in order to be able to craft every resource the ship needs. In addition, Ranks 6 (Forge Accelerator) and 7 (Full Optimization) are often seen as essential due to their significant buffs.
+Engineering is a core skill of any good Railjack crew, but may not be the most exciting role to most. If you find that the idea of being in the cargo hold crafting ammunition and ensuring that all levels remain high enough to keep the ship going, then this is your category. Unfortunately, this is also the most expensive category to level if you want to be useful, with the absolute minimum being Rank 5 (Dome Charge Forge) in order to be able to craft every consumable the ship needs. In addition, Ranks 6 (Forge Accelerator) and 7 (Full Optimization) are often seen as essential due to their significant buffs.
 
 #### Optimal Paths
 
@@ -212,7 +212,7 @@ Here are sample optimal paths. These are not to be taken as rigid gospel, merely
 
 ##### General route
 
-If you don't really know what you prefer, this is a good start. You will rapidly gain the ability to board enemy stations and Crewships, use the Tunguska Cannon, efficiently fire the Turrets, and craft basic resources at the Forge in a pinch.
+If you don't really know what you prefer, this is a good start. You will rapidly gain the ability to board enemy stations and Crewships, use the Tunguska Cannon, efficiently fire the Turrets, and craft basic consumables at the Forge in a pinch.
 
 {{<table class="route-table table-striped simple-scrollbars">}}
 | IP | 1 | 2 | 4 | 5 | 7 | 9 | 13 | 21 | 25 | 33 | 49 | 53 | 61 | 77 | 78 | 80 |
@@ -345,8 +345,88 @@ As with Warframes and weapons, there are what one might consider "essential" mod
 
 {{<section>}}Railjack Equipment{{</section>}}
 
+As has been hinted prior in this guide, the Railjack has some fairly specialized equipment. First, let's cover the two interactable elements we haven't touched upon much yet: the **Forge** and the **Tunguska Cannon**.
 
-<!--
-* Forge, Tunguska Cannon
-* Equipment
-* Refinement and restocking on dock (end of flight loop)-->
+## Forge
+
+![Forge Screen](/images/begin/forge.png)
+
+The Forge allows you to convert resources accumulated in the mission into usable consumables for the Railjack. These are, from left to right,
+* **Revolite**, used to repair Railjack Hazards with the Omni.
+* **Flux Energy** (usually simply called Flux), used to fuel Battle and Tactical Avionics.
+* **Munitions** (sometimes called Ordnance), used to fire the Ordnance Launcher.
+* **Dome Charges**, used to fire the Tunguska Cannon.
+
+Note that each consumable has a maximum storage aboard the Railjack. Attempting to craft beyond this limit will *waste* any overflow. These limits can occasionally be modified with Avionics:
+* **Revolite** has a maximum of 300 and cannot be increased; {{<wlnk>}}Revo Reducer{{</wlnk>}} can be used to reduce consumption.
+* **Flux Energy** has a variable limit depending on your Reactor, and can also be further increased with {{<wlnk>}}Hyperflux{{</wlnk>}}; some Intrinsics also reduce consumption.
+* **Munitions** have a variable limit depending on your Ordnance Launcher, and can also be boosted with {{<wlnk>}}Overloader{{</wlnk>}}.
+* **Dome Charges** have a maximum of 5 and cannot be increased; {{<wlnk>}}Artillery Cheap Shot{{</wlnk>}} can be used to reduce consumption.
+
+The four crafted consumables in turn depend on four drops: {{<wlnk>}}Carbides{{</wlnk>}}, {{<wlnk>}}Copernics{{</wlnk>}}, {{<wlnk>}}Cubic Diodes{{</wlnk>}} and {{<wlnk>}}Pustrels{{</wlnk>}}. These are all common drops in missions from enemies and destructible scenery. The Forge by default has a capacity of **200** of each of these drops, with extra resources being turned directly into mission rewards. This capacity can be increased with {{<wlnk>}}Deep Hold{{</wlnk>}}, but is of limited use.
+
+After crafting a consumable, the Forge used enters cooldown for some time which depends on your Intrinsics. The challenge therefore becomes choosing which consumable to craft at which point in order to manage Forge cooldowns while keeping stocks high enough.
+
+At the end of a sequence of missions, just before jumping into the Dry Dock, it is a good idea, especially early on, to use the *Refine* button. This turns remaining drops into mission rewards, multiplying them by a refinement factor which depends on your unlocked Intrinsics.
+
+While the Forge is primarily an in-mission feature, it is also accessible from the Dry Dock. There, it can be used to instantly craft the maximum amount of each consumable instantly. Unlike within a mission, overshooting will preserve extra crafted consumables and make them available in the next mission. **Remember to always fill up your consumables after a mission so you never lack them to start one!**
+
+## Tunguska Cannon
+
+{{<video static="images/begin/tunguska.png" webm="videos/begin/Tunguska Sequence.webm">}}
+
+The Tunguska Cannon is the ultimate weapon aboard a Railjack. It is the *only* weapon capable of taking down Crewships. Using it involves getting into the Cannon's control seat, which is housed below the cockpit deck, and then charging up the weapon. The weapon's charge can be cancelled without firing as long as it has not completely charged. If it has, it *will* fire when releasing the button, but can be held for a few seconds to aim.
+
+The remaining charges available are shown in the bottom left corner of the HUD.
+
+### Taking down Crewships
+
+<!-- Insert Crewship handling video here -->
+
+Crewships are the biggest threat aboard a Railjack, sporting heavy cannons and the ability to spawn {{<wlnk>}}Ramsleds{{</wlnk>}} which can impact your ship and allow boarders inside. They are also a systematic requirement to completing missions, making them often a priority.
+
+Taking down Crewships with the Tunguska Cannon is a fairly straightforward experience: point and shoot. The devil, however, is in the details. The Crewship has **weak points** which must be exploited at higher levels to ensure a timely kill.
+
+{{<calloutable image="images/begin/crewship.png">}}
+{{<callout clip="0 0 100 100" title="Nacelle Weakpoint">}}
+The nacelle is the most reliable weakpoint, spanning most of the length of a Crewship on either side. Hitting anywhere on this counts as a critical hit.
+{{</callout>}}
+{{<callout clip="0 0 100 100" title="Thruster Weakpoints">}}
+The thrusters are the easiest weakpoint to see, but they are inconsistent. **A blown out (not glowing) thruster takes no damage!** If you see that the thruster you were aiming at is out, quickly retarget a new one or abort the charge. If you are on a Side Turret, *do not shoot thrusters unless told to!*
+{{</callout>}}
+{{</calloutable>}}
+
+<!-- Insert Crewship video with dead engine here -->
+
+## Components
+
+The Railjack also sports three customizable pieces of passive equipment: the **Engines**, the **Shield Array** and the **Reactor**. Each is available in four Houses (Sigma, Lavan, Vidar, Zetki) and three ranks (Mk I through III), with House Sigma being the "default" House with no performance improvements. You will be provided with basic Sigma components and can craft up to Sigma Mk III components through Dojo research, but these are generally poor value.
+
+### Engines
+
+The engine controls your base speed and your boost multiplier.
+* House Lavan provides the weakest base speed but strongest boost multiplier.
+* House Vidar provides the strongest base speed but weakest boost multiplier.
+* House Zetki provides a balanced approach.
+
+Since boost capacity is low, **Vidar** Engines are currently preferred.
+
+### Shield Array
+
+The shield array controls your shield capacity, shield regeneration, and shield regeneration *delay* (i.e. how long the shield needs to not take damage to start recharging).
+* House Zetki provides the weakest capacity but strongest regeneration and shortest delay.
+* House Lavan provides the strongest capacity but weakest regeneration and shortest delay.
+* House Vidar provides a balanced approach.
+
+Since shields tend to last a very short time in most circumstances, a reactive approach with a **Zetki** Shield Array is currently preferred.
+
+### Reactor
+
+The reactor controls your Avionics and Flux capacities.
+* House Zetki provides the weakest Avionics capacity but strongest Flux capacity.
+* House Vidar provides the strongest Avionics capacity but weakest Flux capacity.
+* House Lavan provides a balanced approach.
+
+Unlike other components, the Reactor is more of a matter of preference. Builds using few Avionics can sneak in with a Zetki Reactor for additional Flux capacity, while hungrier builds can use either of the other two according to their needs. Additional Flux capacity is also not necessarily a better call, since regenerating this Flux is no faster or easier even with more capacity.
+
+### Drop Locations

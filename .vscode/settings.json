@@ -4,7 +4,9 @@
         "Intrinsics",
         "Pustrels",
         "kosma",
-        "taktis"
+        "lavan",
+        "taktis",
+        "zetki"
     ],
     "files.exclude": {
         "**/.git": true,
