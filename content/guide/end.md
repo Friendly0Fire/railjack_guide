@@ -1,6 +1,7 @@
 ---
 title: "Endgame Guide"
 date: 2020-05-19T13:53:50-04:00
+draft: true
 ---
 
 {{<section>}}End Goals{{</section>}}

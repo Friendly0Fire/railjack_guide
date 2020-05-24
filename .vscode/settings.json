@@ -1,8 +1,10 @@
 {
     "cSpell.words": [
         "Copernics",
+        "Intrinsics",
         "Pustrels",
-        "Intrinsics"
+        "kosma",
+        "taktis"
     ],
     "files.exclude": {
         "**/.git": true,

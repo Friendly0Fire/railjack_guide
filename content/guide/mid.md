@@ -1,6 +1,7 @@
 ---
 title: "Midpoint Guide"
 date: 2020-05-19T13:53:50-04:00
+draft: true
 ---
 
 {{<section>}}Mid Goals{{</section>}}

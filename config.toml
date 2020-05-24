@@ -6,6 +6,7 @@ author = "El Heladero, FriendlyFire"
 summaryLength = "15"
 assetDir = "static"
 disablePathToLower = true
+buildDrafts = false
 
 ############################# Plugins ##########################
 # css plugins
@@ -66,9 +67,8 @@ weight = 2
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "The only guide for Warframe's Railjack you'll ever need"
+description = "The only guide for Warframe's Railjack that you'll ever need."
 author = "FriendlyFire"
-# post share
 post_share = true
 
 # preloader

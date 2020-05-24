@@ -3,7 +3,7 @@ title: "Beginner's Guide"
 date: 2020-05-12T13:41:22-04:00
 ---
 
-{{<imgdesc align="left" image="images/begin/Tenno_Ship_2.jpg" title="Getting a Railjack">}}
+{{<imgdesc align="left" image="images/begin/Tenno_Ship_2.jpg" title="Getting a Railjack" imgwidth="7">}}
 The first order of business is: how to get a Railjack. Before we begin, ensure that:
 - You have completed the *{{<wlnk>}}Second Dream{{</wlnk>}}* quest.
 - You are a member of a clan.
@@ -264,20 +264,89 @@ This route is more or less dedicated to engineering and the Forge, with many fro
 
 {{<section>}}Avionics{{</section>}}
 
-Unlike Intrinsics, *Avionics*, despite the fancy name, are a very familiar concept: they are essentially {{<wlnk>}}Mods{{</wlnk>}} for the Railjack.
+Unlike Intrinsics, *Avionics*, despite the fancy name, are a very familiar concept: they are essentially {{<wlnk>}}Mods{{</wlnk>}} for the Railjack. There are three main categories of Avionics which cover different parts of the Railjack: **Battle Avionics**, **Integrated Avionics** and **Tactical Avionics**.
 
 {{<calloutable image="images/begin/avionics.png">}}
 {{<callout clip="100 980 750 350" title="Battle Avionics">}}
+*Battle Avionics* are closest to Warframe abilities. They are activated by the pilot using the same keys as usually bound to your Abilities 1 through 3. Each slot supports specific Avionics, so there are constraints as to what loadouts you can build (certain Avionics cannot be used simultaneously). These are mostly offensive and affect enemies *outside* the ship.
 {{</callout>}}
 {{<callout clip="1700 100 775 900" title="Integrated Avionics">}}
+*Integrated Avionics* resemble a mixture of Warframe and weapon modding. They generally focus on either tank (health, armor, shields), damage (+% critical chance, etc.) or utility (faster Archwings near the Railjack). All nine slots can be used for any Integrated Avionic, but as usual only one copy of a given Avionic may be used.
 {{</callout>}}
 {{<callout clip="1700 1000 775 325" title="Tactical Avionics">}}
+*Tactical Avionics* are utility abilities. They can be activated by anyone through the Tactical Menu and usually tend to provide crowd control against enemies on foot, assistance to the crew, or general Railjack utility.
 {{</callout>}}
 {{<callout clip="1050 50 450 300" title="Avionics Capacity">}}
+Railjacks also have a Capacity, much the same way frames do. However, unlike other equipment, Orokin Catalysts/Reactors do not exist. Instead, a Railjack provides a fixed amount of capacity, which can be improved with a better Reactor (which will be covered later).
 {{</callout>}}
 {{</calloutable>}}
 
-* Dirac and how it works
-* Core avionics
+Of particular note is the notion of **Grid**. While the closest analog to the rest of the game would be a Polarization, the effect and mechanic are very different. The "Grid" is the sum total of all of your Avionics slots, and each of these slots can be improved individually three times. Each upgrade costs most and effectively increases the rank of the Avionic slotted into it, *even if that would overflow past the Avionic's max rank*. As a simple example, in the image above, the Avionic *Artillery Cheap Shot* has a single rank in and of itself, but is improved to rank 4 thanks to the Grid slot upgrade.
+
+{{<imgdesc align="right" image="images/Dirac.png" title="Dirac" imgwidth="3" minheight="275px">}}
+*Dirac* is the equivalent of {{<wlnk>}}Endo{{</wlnk>}} for Mods, upgrading their stats at the cost of progressively larger amounts of Dirac. It is also used to upgrade the aforementioned Grid.
+
+**N.B.** In the current state of the game, Dirac is plentiful, coming from dismantling equipment, drops, and mission rewards. Feel free to spend it liberally.
+{{</imgdesc>}}
+
+### Core Avionics
+
+As with Warframes and weapons, there are what one might consider "essential" mods. These are mods which substantially increase your survivability or power level. This section presents early Avionics to look for as well as where to look for them (the best location and enemy are **bolded**). Note that as of the current version, *all* Avionics drop exclusively from fighter enemies.
+
+**N.B** If you join our Discord server, you will find that many core Avionics are plentiful, especially for veterans, and that you might be able to snatch a few of them for free!
+
+{{<imgdesc align="left" image="images/begin/Bulkhead.png" title="Bulkhead" imgwidth="2" minheight="175px">}}
+{{<wlnk>}}Bulkhead{{</wlnk>}} is the Railjack's {{<wlnk>}}Vitality{{</wlnk>}}, increasing Health by up to **+506%** at max rank. It is a fairly common Avionic. Note that you start with a Sigma-variant Bulkhead with much lower stats (the equivalent of {{<wlnk>}}Flawed Mods{{</wlnk>}}). This is one of the first priorities, especially when starting out, since it *massively* improves your Railjack's survivability.
+* Locations: **Earth Proxima**, Saturn Proxima
+* Enemies: **Elite Kosma Taktis (3.32%)**, Elite Gyre Taktis (3.32%)
+{{</imgdesc>}}
+
+{{<imgdesc align="right" image="images/begin/HullWeave.png" title="Hull Weave" imgwidth="2" minheight="175px">}}
+{{<wlnk>}}Hull Weave{{</wlnk>}} is the Railjack's {{<wlnk>}}Steel Fiber{{</wlnk>}}, increasing Armor by up to **+253%** at max rank. It is a fairly common Avionic. Note that you start with a Sigma-variant Hull Weave with much lower stats (the equivalent of {{<wlnk>}}Flawed Mods{{</wlnk>}}). Similarly to Bulkhead, this is a massive boost to survivability and should be equipped as a priority.
+* Locations: **Earth Proxima**, Saturn Proxima, Veil Proxima
+* Enemies: **Kosma Taktis (3.32%)**, Gyre Taktis (3.32%), Exo Taktis (3.32%), Cannon Battery (3.32%)
+{{</imgdesc>}}
+
+{{<imgdesc align="left" image="images/begin/PolarCoil.png" title="Polar Coil" imgwidth="2" minheight="175px">}}
+{{<wlnk>}}Polar Coil{{</wlnk>}} increases Turret Heat Capacity by up to **+66%** at max rank, allowing continuous fire for extended periods. It is a common Avionic. This Avionic's utility decreases as one gets familiar with Railjack combat and acquires Battle Avionics, but early on it is a very useful Avionic to speed up mission grinding.
+* Locations: **Earth Proxima**, Saturn Proxima, Veil Proxima
+* Enemies: **Kosma Cutter (5.7%)**, Elite Gyre Taktis (3.8%), Elite Gyre Cutter (3.3%), Exo Taktis (3.8%)
+{{</imgdesc>}}
+
+{{<imgdesc align="right" image="images/begin/ArtilleryCheapShot.png" title="Artillery Cheap Shot" imgwidth="2" minheight="175px">}}
+{{<wlnk>}}Artillery Cheap Shot{{</wlnk>}} can give up to a **50%** chance of not consuming Dome Charges when firing the *Tunguska Cannon*, significantly reducing Forge pressure. It is an extremely common Avionic. This is a crucial Avionic at any level of play, since only 5 Dome Charges can be stockpiled at any given time.
+* Locations: **Saturn Proxima**
+* Enemies: **Gyre Cutter (7.3%)**, Gyre Outrider (3.8%)
+{{</imgdesc>}}
+
+{{<imgdesc align="left" image="images/begin/IntruderStasis.png" title="Intruder Stasis" imgwidth="2" minheight="175px">}}
+{{<wlnk>}}Intruder Stasis{{</wlnk>}}, when activated, immediately freezes all enemies aboard the Railjack for up to **45 seconds** before cooling down for 240 seconds. It is a common Avionic. This is a useful Avionic early on to reduce stress and complexity, especially with a small crew, but can be safely dropped later on.
+* Locations: Earth Proxima, **Saturn Proxima**
+* Enemies: Elite Kosma Cutter (3.8%), **Elite Gyre Flak (14.6%)**
+{{</imgdesc>}}
+
+{{<imgdesc align="right" image="images/begin/BattleForge.png" title="Battle Forge" imgwidth="2" minheight="175px">}}
+{{<wlnk>}}Battle Forge{{</wlnk>}}, when activated, reduces the remaining cooldown on *all* Forge consoles by up to **120 seconds**, essentially allowing their immediate use again, which also significantly reduces Forge pressure, before cooling down for 480 seconds. It is a common Avionic. This Avionic's utility increases over time, becoming more and more relevant as Battle Avionics start getting used, draining Flux faster. It is not as necessary early on.
+* Locations: **Earth Proxima**
+* Enemies: **Kosma Cutter (5.7%)**
+{{</imgdesc>}}
+
+{{<imgdesc align="left" image="images/begin/AnodeCell.png" title="Anode Cell" imgwidth="2" minheight="175px">}}
+{{<wlnk>}}Anode Cell{{</wlnk>}} is the Railjack's {{<wlnk>}}Fast Deflection{{</wlnk>}}, increasing Shield Recharge by up to **+80%** at max rank. It is a rare Avionic. This is more useful than {{<wlnk>}}Maxima{{</wlnk>}}, the Railjack's equivalent of {{<wlnk>}}Redirection{{</wlnk>}}, since shields tend to get shredded very easily and frequently restoring then losing shields allows you to take full advantage of the Railjack's long shield gate to take no damage for 3 seconds each time.
+* Locations: **Saturn Proxima**, Veil Proxima
+* Enemies: **Kosma Flak (0.1%)**, Elite Exo Taktis (0.1%)
+{{</imgdesc>}}
+
+{{<imgdesc align="right" image="images/begin/Hyperstrike.png" title="Hyperstrike" imgwidth="2" minheight="175px">}}
+{{<wlnk>}}Hyperstrike{{</wlnk>}} is the Railjack's {{<wlnk>}}Serration{{</wlnk>}}, increasing Turret Damage by up to **+121%** at max rank. It is a rare Avionic. Note that you start with a Sigma-variant Hyperstrike with much lower stats (the equivalent of {{<wlnk>}}Flawed Mods{{</wlnk>}}). This is of similar utility than Polar Coil, but due to its rarity is ranked lower. It should be used *before* Polar Coil if one is lucky enough to get it early on, since it reduces time to kill substantially.
+* Locations: **Earth Proxima**, Saturn Proxima, Veil Proxima
+* Enemies: **Elite Kosma Flak (0.3%)**, Elite Gyre Flak (0.1%), Elite Exo Flak (0.1%)
+{{</imgdesc>}}
+
+{{<section>}}Railjack Equipment{{</section>}}
+
+
+<!--
 * Forge, Tunguska Cannon
-* Refinement and restocking on dock (end of flight loop)
+* Equipment
+* Refinement and restocking on dock (end of flight loop)-->
