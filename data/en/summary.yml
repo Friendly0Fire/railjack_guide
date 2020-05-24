@@ -19,19 +19,10 @@ summaries :
   - title : The Reference
     id : reference
     summary_items :
-    - icon : fas fa-info
-      title : Basics
-      content : Go over the first steps and how to get around.
-      link: reference/basics
-
-    - icon : fas fa-fist-raised
-      title : Combat
-      content : Learn how to fight aboard and around a Railjack.
-      link: reference/basics
-
     - icon : fas fa-user-plus
       title : Intrinsics
       content : Discover the new abilities you can gain with the Intrinsics system.
+      link: reference/intrinsics
 
     - icon : fas fa-space-shuttle
       title : Equipment
@@ -52,7 +43,3 @@ summaries :
     - icon : fas fa-pencil-ruler
       title : Builds
       content : Get an overview of the current meta builds as well as insight into why they are at the top.
-
-    - icon : fas fa-bookmark
-      title : Resources
-      content : Where to find even more information.
