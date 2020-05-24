@@ -11,11 +11,11 @@ summaries :
     - icon : fas fa-tachometer-alt
       title : Achieving Orbit
       content : See what it takes to leap into the stratosphere.
-      link: guide/mid
+      #link: guide/mid
     - icon : fas fa-meteor
       title : New Frontiers
       content : Welcome to the top. Here's what you need to know.
-      link: guide/end
+      #link: guide/end
   - title : The Reference
     id : reference
     summary_items :
