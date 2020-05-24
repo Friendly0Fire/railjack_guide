@@ -345,7 +345,7 @@ As with Warframes and weapons, there are what one might consider "essential" mod
 
 {{<section>}}Railjack Equipment{{</section>}}
 
-As has been hinted prior in this guide, the Railjack has some fairly specialized equipment. First, let's cover the two interactable elements we haven't touched upon much yet: the **Forge** and the **Tunguska Cannon**.
+As has been hinted prior in this guide, the Railjack has some fairly specialized equipment. First, let's cover the two interactable elements we haven't touched upon much yet: the **Forge**, **Ordnance Launcher** and the **Tunguska Cannon**.
 
 ## Forge
 
@@ -371,6 +371,33 @@ At the end of a sequence of missions, just before jumping into the Dry Dock, it 
 
 While the Forge is primarily an in-mission feature, it is also accessible from the Dry Dock. There, it can be used to instantly craft the maximum amount of each consumable instantly. Unlike within a mission, overshooting will preserve extra crafted consumables and make them available in the next mission. **Remember to always fill up your consumables after a mission so you never lack them to start one!**
 
+## Ordnance Launcher
+
+The Ordnance Launchers are unique in that they are the only component that is *only* obtainable from the Dojo. As such, it is by far the easiest component to upgrade right away. There are three Ordnance Launchers:
+* The **Galvarc** is a continuous beam which can chain for up to three targets. Its low damage makes it largely ineffectual. Avoid.
+* The **Milati** is a dumbfire (non-tracking) rocket pod, launching 12 rockets per salvo. Its damage is acceptable, but each rocket has a fairly small area of effect and their dumbfire nature makes them tricky to use against fighters. Potentially usable but not optimal.
+* The **Tycho Seeker** is a seeker missile launcher. It fires a single, heavy damage missile which can track extremely well as long as the target has been locked on. Considered the meta option.
+
+Of particular note is the Tycho Seeker's lock-on mechanic. A target (be it a fighter or Crewship) is being locked on when four chevrons appear around its targeting icon. These chevrons are initially rotated 45 degrees from the diamond shape of the icon, but pivot when lock on has been achieved. If the Seeker is fired before locked on, it will still launch, but it will behave like a dumbfire rocket.
+
+{{<inlinecss>}}
+.lock-table {
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+
+    table {
+        margin: auto;
+    }
+}
+{{</inlinecss>}}
+
+{{<table class="lock-table">}}
+| Lock not acquired | Lock acquired |
+|-------------------|---------------|
+| ![Lock not acquired](/images/begin/lockoff.png) | ![Lock acquired](/images/begin/lockon.png) |
+{{</table>}}
+
 ## Tunguska Cannon
 
 {{<video static="images/begin/tunguska.png" webm="videos/begin/Tunguska Sequence.webm">}}
@@ -381,26 +408,55 @@ The remaining charges available are shown in the bottom left corner of the HUD.
 
 ### Taking down Crewships
 
-<!-- Insert Crewship handling video here -->
-
 Crewships are the biggest threat aboard a Railjack, sporting heavy cannons and the ability to spawn {{<wlnk>}}Ramsleds{{</wlnk>}} which can impact your ship and allow boarders inside. They are also a systematic requirement to completing missions, making them often a priority.
 
 Taking down Crewships with the Tunguska Cannon is a fairly straightforward experience: point and shoot. The devil, however, is in the details. The Crewship has **weak points** which must be exploited at higher levels to ensure a timely kill.
 
 {{<calloutable image="images/begin/crewship.png">}}
-{{<callout clip="0 0 100 100" title="Nacelle Weakpoint">}}
+{{<callout clip="925 675 350 350" title="Nacelle Weakpoints">}}
 The nacelle is the most reliable weakpoint, spanning most of the length of a Crewship on either side. Hitting anywhere on this counts as a critical hit.
 {{</callout>}}
-{{<callout clip="0 0 100 100" title="Thruster Weakpoints">}}
-The thrusters are the easiest weakpoint to see, but they are inconsistent. **A blown out (not glowing) thruster takes no damage!** If you see that the thruster you were aiming at is out, quickly retarget a new one or abort the charge. If you are on a Side Turret, *do not shoot thrusters unless told to!*
+{{<callout clip="750 100 350 350" title="Thruster Weakpoints">}}
+The thrusters are the easiest weakpoint to see, but they are inconsistent. **A blown out (not glowing) thruster takes no bonus damage!** If you see that the thruster you were aiming at is out, quickly retarget a new one or abort the charge. If you are on a Side Turret, *do not shoot thrusters unless told to!*
 {{</callout>}}
 {{</calloutable>}}
+
+#### Using the Nacelle weakpoint
+{{<video webm="videos/begin/Crewship Nacelle Sequence.webm">}}
+
+#### Using the Thruster weakpoint
+{{<video webm="videos/begin/Crewship Thruster Sequence.webm">}}
+
+#### Blown Thruster weakpoint consequence
+{{<video webm="videos/begin/Crewship Dead Engine Sequence.webm">}}
+
+### Shielded Crewships
+
+In higher level missions, you may encounter *shielded* Crewships. These may be taken down by first destroying the three Shield Generators on the surface of the Crewship (two on either side of the dorsal section, one under the ship) by any means available. It is easy to tell which generator is still online by looking for the glowing dust-like trail each one emits.
+
+{{<calloutable image="images/begin/csshields.png">}}
+{{<callout clip="750 150 240 195" title="Shield Generators">}}
+Shield Generators are the only weak points of a shielded Crewship and are easily taken down. Note that there is a third one below the Crewship.
+{{</callout>}}
+{{</calloutable>}}
+
+#### Using Archwing
+
+Using an Archwing for this job is entirely viable, if slower. It can be especially useful if one intends to then board the Crewship.
+{{<video webm="videos/begin/Crewship Shields Manual Sequence.webm">}}
+
+#### Using Tycho Seekers
+
+Using Tycho Seekers is the favored approach. For most missions, a single shot will blow up all three Shield Generators, allowing immediate fire with the Tunguska Cannon.
+{{<video webm="videos/begin/Crewship Shields Sequence.webm">}}
 
 <!-- Insert Crewship video with dead engine here -->
 
 ## Components
 
 The Railjack also sports three customizable pieces of passive equipment: the **Engines**, the **Shield Array** and the **Reactor**. Each is available in four Houses (Sigma, Lavan, Vidar, Zetki) and three ranks (Mk I through III), with House Sigma being the "default" House with no performance improvements. You will be provided with basic Sigma components and can craft up to Sigma Mk III components through Dojo research, but these are generally poor value.
+
+All Components, in addition to any Turret you may find, is found as Wreckage. These must be repaired first, which involves spending resources on them and waiting 12 hours for the repair to complete, unless one has access to a {{<wlnk>}}Rush Repair Drone{{</wlnk>}} (though these should be saved up for more expensive parts).
 
 ### Engines
 
@@ -429,4 +485,19 @@ The reactor controls your Avionics and Flux capacities.
 
 Unlike other components, the Reactor is more of a matter of preference. Builds using few Avionics can sneak in with a Zetki Reactor for additional Flux capacity, while hungrier builds can use either of the other two according to their needs. Additional Flux capacity is also not necessarily a better call, since regenerating this Flux is no faster or easier even with more capacity.
 
-### Drop Locations
+### Scrapping and Valence Fusion
+
+Old Components will eventually accumulate as you progress through Empyrean. There are two actions that can be taken with old gear:
+* **Scrapping** will give a small amount of Dirac for Wreckage and 80% of the original repair cost for built parts.
+* **Valence Fusion** works similarly to Lich Weapons, allowing a donor part to be fused into a chosen part to upgrade its stats. Fusing a built Component costs Dirac, while fusing a Wreckage costs 40% of its repair resource cost and Credits (but is instantaneous!).
+
+Valence Fusion only works for Components of the same type and House. It also provides an additional stats bonus based on the tier of the parts:
+* Fusing two parts of the same tier (e.g. Mk III into Mk III) gives a flat **+10%** bonus to its stats.
+* Fusing two parts one tier removed (e.g. Mk II into Mk III)  gives a flat **+5%** bonus to its stats.
+* Fusing two parts two tiers removed (e.g. Mk I into Mk III)  gives a flat **+2%** bonus to its stats.
+
+Thanks to these mechanics, you are *highly* encouraged to experiment! Build parts and try them out, there is little to no cost to doing so.
+
+{{<section>}}Next Steps{{</section>}}
+
+You're still with us? Well then, welcome... to the [Midgame](/guide/mid).
