@@ -1,4 +1,7 @@
-
-<div class="simple-video"><video autoplay muted loop poster='{{ .Get "static" | absURL }}'>
+{{ $static := "" }}
+{{ if .Get "static" }}
+{{ $static = resources.Get (.Get "static") }}
+{{ end }}
+<div class="simple-video"><video autoplay muted loop{{ with $static }} poster='{{ .Permalink }}'{{ end }}>
 {{ with .Get "webm" }}<source src='{{ . | absURL }}' type="video/webm">{{ end }}
 </video></div>

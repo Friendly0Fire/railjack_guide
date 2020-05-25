@@ -21,7 +21,6 @@ asset = "css/vendor/tooltipster.css"
 asset = "js/vendor/jquery.js"
 [[params.plugins.js]]
 asset = "js/vendor/tooltipster.js"
-code = "$(document).ready(() => $('.tooltipster').tooltipster());"
 [[params.plugins.js]]
 asset = "js/vendor/bootstrap.js"
 [[params.plugins.js]]
