@@ -68,7 +68,7 @@ This is the *pilot's seat*. It is where the ship is maneuvered, the primary weap
 ## The Midsection
 
 {{<calloutable image="images/begin/midsection.png">}}
-{{<callout clip="50 300 650 650" title="Exit" titlealign="right">}}
+{{<callout clip="50 300 650 650" title="Airlock" titlealign="right">}}
 One of the many exits of the Railjack. While in mission, this will drop you in your Archwing next to the ship. When docked at the Dry Dock, this will teleport you to the consoles in the Dry Dock. All exits aboard the Railjack look the same, making them easy to spot from afar.
 {{</callout>}}
 {{<callout clip="900 500 550 250" title="Side Turret">}}
@@ -200,9 +200,9 @@ Here are sample optimal paths. These are not to be taken as rigid gospel, merely
     border-collapse: separate;
     border-spacing: 2px;
 
-    tr td:first-child, th:first-child {
+    tr td:first-child, th {
         font-weight: bold;
-        font-family: "Comfortaa";
+        font-family: "Comfortaa", sans-serif;
         background-color: rgba(0, 0, 0, 0.1);
     }
 }
@@ -419,10 +419,10 @@ Crewships are the biggest threat aboard a Railjack, sporting heavy cannons and t
 Taking down Crewships with the Tunguska Cannon is a fairly straightforward experience: point and shoot. The devil, however, is in the details. The Crewship has **weak points** which must be exploited at higher levels to ensure a timely kill.
 
 {{<calloutable image="images/begin/crewship.png">}}
-{{<callout clip="925 675 350 350" title="Nacelle Weakpoints">}}
+{{<callout clip="700 650 400 250" title="Nacelle Weakpoints" titlevalign="bottom">}}
 The nacelle is the most reliable weakpoint, spanning most of the length of a Crewship on either side. Hitting anywhere on this counts as a critical hit.
 {{</callout>}}
-{{<callout clip="750 100 350 350" title="Thruster Weakpoints">}}
+{{<callout clip="350 80 350 350" title="Thruster Weakpoints">}}
 The thrusters are the easiest weakpoint to see, but they are inconsistent. **A blown out (not glowing) thruster takes no bonus damage!** If you see that the thruster you were aiming at is out, quickly retarget a new one or abort the charge. If you are on a Side Turret, *do not shoot thrusters unless told to!*
 {{</callout>}}
 {{</calloutable>}}

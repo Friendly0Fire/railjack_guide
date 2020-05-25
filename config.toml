@@ -4,40 +4,30 @@ title = "Railjack Outpost"
 theme = "meghna"
 author = "El Heladero, FriendlyFire"
 summaryLength = "15"
-assetDir = "static"
 disablePathToLower = true
 buildDrafts = false
 
 ############################# Plugins ##########################
 # css plugins
 [[params.plugins.css]]
-link = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+asset = "css/vendor/bootstrap.css"
 [[params.plugins.css]]
-link = "https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css"
+asset = "css/vendor/aos.css"
 [[params.plugins.css]]
-link = "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-[[params.plugins.css]]
-link = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-[[params.plugins.css]]
-link = "https://unpkg.com/aos@next/dist/aos.css"
+asset = "css/vendor/tooltipster.css"
 
 # js plugins
 [[params.plugins.js]]
-link = "https://code.jquery.com/jquery-3.5.1.min.js"
+asset = "js/vendor/jquery.js"
 [[params.plugins.js]]
-link = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+asset = "js/vendor/tooltipster.js"
+code = "$(document).ready(() => $('.tooltipster').tooltipster());"
 [[params.plugins.js]]
-link = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+asset = "js/vendor/bootstrap.js"
 [[params.plugins.js]]
-link = "https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.min.js"
+asset = "js/vendor/fa.js"
 [[params.plugins.js]]
-link = "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
-[[params.plugins.js]]
-link = "https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.14.0/lozad.min.js"
-[[params.plugins.js]]
-link = "https://kit.fontawesome.com/33a0399cb5.js"
-[[params.plugins.js]]
-link = "https://unpkg.com/aos@2.3.1/dist/aos.js"
+asset = "js/vendor/aos.js"
 code = "AOS.init();"
 
 ############################# Navigation ##################################
