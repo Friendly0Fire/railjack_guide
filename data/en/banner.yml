@@ -2,7 +2,7 @@
 banner:
     enable : true
     bg_video: "videos/Hero.webm"
-    title : "The Veil beckons, Tenno"
+    title : "The Veil beckons,<br>Tenno"
     content : "Are you ready to answer the call?"
     button:
       enable : true
