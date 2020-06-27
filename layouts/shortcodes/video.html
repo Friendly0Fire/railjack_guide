@@ -2,6 +2,11 @@
 {{ if .Get "static" }}
 {{ $static = resources.Get (.Get "static") }}
 {{ end }}
-<div class="simple-video"><video autoplay muted loop{{ with $static }} poster='{{ .Permalink }}'{{ end }}>
+<div class="simple-video">
+    <div class="simple-video-control">
+        <a class="simple-video-play"><i class="fas fa-play"></i></a>
+        <a class="simple-video-rewind"><i class="fas fa-fast-backward"></i></a>
+    </div>
+    <video muted loop{{ with $static }} poster='{{ .Permalink }}'{{ end }}>
 {{ with .Get "webm" }}<source src='{{ . | absURL }}' type="video/webm">{{ end }}
 </video></div>

@@ -1,4 +1,4 @@
 {{ $img := resources.Get (.Get "image") }}
-<div class="image-with-callouts" data-aos="fade-up">
+<div class="image-with-callouts">
 {{ .Inner | safeHTML }} <a class="image-darkening" href="#"></a><img class="main-image" src='{{ $img.Permalink }}'>
 </div>

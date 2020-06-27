@@ -1,6 +1,6 @@
 {{ $colwidth := default "5" (.Get "imgwidth") }}
 {{ $img := resources.Get (.Get "image") }}
-<div class="img-desc container-fluid px-lg-5" data-aos="fade-up">
+<div class="img-desc container-fluid px-lg-5">
 <div class="row mx-lg-n5">
 {{ if eq (.Get "align") "left" }}
 <div class="col-lg-{{ $colwidth }} img-wrapper" {{with .Get "margin"}}style="padding: {{.}}"{{end}}><img src='{{ $img.Permalink }}' /></div>
