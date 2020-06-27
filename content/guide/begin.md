@@ -19,9 +19,9 @@ As part of the *{{<wlnk>}}Rising Tide{{</wlnk>}}* quest, you will need to collec
 
 The first way is to look for them in regular missions:
 - {{<wlnk>}}Carbides{{</wlnk>}} primarily drop on {{<wlnk>}}Ceres{{</wlnk>}}. Focus on elite enemies. *Kiste* is a good location.
-- {{<wlnk>}}Pustrels{{</wlnk>}} exclusively drop from red ore veins on the *{{<wlnk>}}Plains of Eidolon{{</wlnk>}}*.
+- {{<wlnk>}}Pustrels{{</wlnk>}} primarily drop on {{<wlnk>}}Eris{{</wlnk>}}. Focus on elite enemies. *Zabala* is a good location.
 - {{<wlnk>}}Cubic Diodes{{</wlnk>}} primarily drop on {{<wlnk>}}Europa{{</wlnk>}}. Focus on elite enemies. *Larzac* is a good location.
-- {{<wlnk>}}Copernics{{</wlnk>}} exclusively drop from red ore veins in the *{{<wlnk>}}Orb Vallis{{</wlnk>}}*.
+- {{<wlnk>}}Copernics{{</wlnk>}} exclusively drop from {{<wlnk>}}Eximus{{</wlnk>}} enemies on {{<wlnk>}}Lua{{</wlnk>}}. *Apollo* is a good location.
 
 The second, and much faster way, is to join Railjack crews. These resources are plentiful drops in any Empyrean mission.
 {{</imgdesc>}}
